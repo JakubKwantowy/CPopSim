@@ -4,13 +4,12 @@
 #define CPOPSIM_STRUCTS
 
 typedef struct {
-    byte age;
-    Genome genes;
-} Entity;
-
-typedef struct {
-    byte maxage;
+    byte attrib;
 } Genome;
 
+typedef struct {
+    byte age; // if MSB is 1 then entity is alive
+    Genome genes;
+} Entity;
 
 #endif
